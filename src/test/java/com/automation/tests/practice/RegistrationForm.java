@@ -51,6 +51,7 @@ public class RegistrationForm {
 
         driver.findElement(maleBy).click();
         driver.findElement(dateOfBirthBy).sendKeys("01/02/1940");
+        //driver.findElement(dateOfBirthBy).sendKeys("01/02/1940");
 
         Select departmentSelect = new Select(driver.findElement(departmentBy));
         departmentSelect.selectByVisibleText("Department of Agriculture");
